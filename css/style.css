@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background-color: rgb(126, 145, 174);
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+
+
+a.border {
+    border-right: 1px solid white;
+}
+
+.navbar a {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 40px;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(238, 234, 234);
+    padding: 1px 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+header {
+    background-image: url(../images/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 60%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+
+.bgr {
+
+    position: relative;
+    bottom: 10%;
+    width: 80%;
+    height: auto;
+    background-color: rgba(72, 85, 102, 0.33);
+    box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.3);
+}
+
+header .welcome {
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Trebuchet MS', serif;
+    font-size: 162px;
+    color: #1b1b1b;
+}
+
+header p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 87px;
+    text-transform: uppercase;
+    color: #1b1b1b;
+}
+
+section {
+    min-height: 100vh;
+}
