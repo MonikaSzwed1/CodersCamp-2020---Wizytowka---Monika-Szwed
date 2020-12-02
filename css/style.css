@@ -14,6 +14,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
 
 }
 
@@ -116,22 +117,65 @@ header p {
 .personality {
     width: 100%;
     height: 100vh;
-    background-color: rgb(214, 210, 214);
+    background-color: #dfdede;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    font-family: 'Trebuchet MS', sans-serif;
 
 
 }
 
-.personality .about {
-    width: 25%;
-    height: 70%;
-    background-color: rgb(242, 242, 242);
-    border-top: 5px solid rgb(136, 154, 180);
-    /* border-radius: 2%; */
+.personality .box {
+    width: 23%;
+    /* height: 55%; */
+    background-color: #f2f2f2;
+    border-top: 5px solid rgb(126, 145, 174);
+    border-radius: 2%;
     box-shadow: 3px 7px 11px 0px rgba(95, 95, 95, 0.61);
+    font-family: 'Trebuchet', sans-serif;
+    margin-right: 3%;
+    color: #1b1b1b;
+
+
 }
+
+.box .about {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 2px solid #dfdede;
+    margin: 4% 4% 4% 4%;
+    padding-bottom: 15px;
+
+
+}
+
+.about img {
+    width: 35%;
+    /* margin-left: 2%;
+    margin-top: 2%; */
+}
+
+.about .personal_data {
+    margin-left: 5%;
+
+}
+
+.personal_data h3 {
+    font-size: 30px;
+}
+
+
+.box p {
+    font-size: 14px;
+    text-align: justify;
+    margin: 4% 4% 4% 4%;
+}
+
+
+
+
 
 */ section {
     min-height: 100vh;
