@@ -10,11 +10,12 @@ html {
     scroll-behavior: smooth;
 }
 
+/*Navigation*/
 .navbar {
     display: flex;
     justify-content: center;
     overflow: hidden;
-    background-color: rgba(126, 145, 174, 0.6);
+    background-color: rgba(126, 145, 174);
     position: fixed;
     top: 0;
     width: 100%;
@@ -23,8 +24,47 @@ html {
 }
 
 
+
 a.border {
     border-right: 1px solid white;
+}
+
+.logo {
+    z-index: 2;
+    left: 5px;
+    top: 5px;
+    position: fixed;
+    animation: heartbeat 2s ease-in-out infinite both
+}
+
+
+
+@keyframes heartbeat {
+    from {
+        transform: scale(0.99);
+        transform-origin: center center;
+        animation-timing-function: ease-out
+    }
+
+    10% {
+        transform: scale(.91);
+        animation-timing-function: ease-in
+    }
+
+    17% {
+        transform: scale(.98);
+        animation-timing-function: ease-out
+    }
+
+    33% {
+        transform: scale(.87);
+        animation-timing-function: ease-in
+    }
+
+    45% {
+        transform: scale(0.99);
+        animation-timing-function: ease-out
+    }
 }
 
 .navbar a {
@@ -40,7 +80,7 @@ a.border {
 }
 
 
-
+/*Home*/
 header {
     background-image: url(../images/header.jpg);
     background-repeat: no-repeat;
@@ -83,11 +123,14 @@ header p {
     color: #1b1b1b;
 }
 
+/*ekipa*/
+
 .row {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 100vh;
+    background-color: #f2f2f2;
 
 }
 
@@ -118,6 +161,7 @@ header p {
     transform: scale(0.9);
 }
 
+/*o nas*/
 .personality {
     width: 100%;
     height: 100vh;
@@ -191,29 +235,45 @@ header p {
 .album {
     position: relative;
     width: 100%;
-    background-color: #cdcdcd;
+    background-color: #f2f2f2;
     overflow: hidden;
     padding: 1%;
 }
 
 .container {
-    border-top: solid 5px blue;
+    border-top: 5px solid rgb(126, 145, 174);
     width: 80%;
     margin: 0 auto 20px auto;
-    background-color: beige;
+    background-color: #dfdede;
     overflow: hidden;
     display: flex;
     border-radius: 5px;
 }
 
 .text {
+    font-family: 'Trebuchet', sans-serif;
+    text-align: justify;
+    color: #1b1b1b;
     width: 50%;
-    padding: 1%;
+    padding: 2%;
+}
+
+.text h3 {
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.border_2 {
+    border-top: 2px solid #f2f2f2;
+}
+
+.border_2 p {
+    margin-top: 10px;
+    font-size: 15px;
 }
 
 .photo {
     width: 50%;
-
     background-size: cover;
     background-position: center;
     min-height: 300px;
@@ -229,4 +289,79 @@ header p {
 
 .photo_3 {
     background-image: url(../images/portf3.jpg);
+}
+
+/*Kontakt*/
+.contact {
+    position: relative;
+    background-color: #dfdede;
+    /* padding: 36px 20px; */
+}
+
+.contact h1 {
+    font-family: 'Trebuchet', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: rgb(109, 133, 172);
+    text-align: center;
+    padding: 30px 0;
+}
+
+.contact .wrap {
+    padding-top: 15px;
+    width: 40%;
+    margin: 0 auto;
+
+}
+
+.contact input,
+.contact button,
+.contact textarea {
+    width: 100%;
+    margin-bottom: 25px;
+    font-size: 13px;
+    padding: 10px;
+}
+
+.contact input {
+
+    height: 46px;
+    font-size: 24px;
+
+}
+
+.contact textarea {
+    height: 180px;
+    font-size: 24px;
+}
+
+.contact button {
+
+
+
+    background-color: rgb(148, 162, 184);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 50px;
+    border: 2px solid white;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+
+}
+
+.socials {
+    display: flex;
+    justify-content: space-around;
+}
+
+.socials img {
+    margin-bottom: 10px;
+    width: 15%;
 }
