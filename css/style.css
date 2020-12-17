@@ -369,7 +369,11 @@ header p {
 /* mobile*/
 @media (max-width: 1199px) {}
 
-@media (max-width: 991px) {}
+@media (max-width: 991px) {
+    .logo {
+        display: none;
+    }
+}
 
 @media (max-width: 767px) {}
 
