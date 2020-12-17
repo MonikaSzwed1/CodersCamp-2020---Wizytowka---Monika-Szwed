@@ -365,3 +365,17 @@ header p {
     margin-bottom: 10px;
     width: 15%;
 }
+
+/* mobile*/
+@media (max-width: 1199px) {}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 575px) {
+    /*nav*/
+
+
+
+}
