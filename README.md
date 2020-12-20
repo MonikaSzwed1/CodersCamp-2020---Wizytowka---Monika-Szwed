@@ -1,11 +1,11 @@
 # CodersCamp 2020 - Projekt HTML & CSS
-**CodersCamp (coderscamp.edu.pl) - Największy otwarty kurs programowania webowego** 
+
 ### Dane o autorze
 
-Imię: Monika
-Nazwisko: Szwed
-Data urodzenia: 29 lipca 1993
-Zawód: oby front-end developer 
+- Imię: Monika
+- Nazwisko: Szwed
+- Data urodzenia: 29 lipca 1993
+- Zawód: oby front-end developer 
 
 ## Projekt HTML & CSS — Wizytówka / Portfolio - Założenia
 
