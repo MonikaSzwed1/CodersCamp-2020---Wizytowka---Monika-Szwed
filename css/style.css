@@ -176,6 +176,7 @@ header p {
 
 
 .personality {
+    position: relative;
     width: 100%;
     height: 100vh;
     background-color: #dfdede;
@@ -289,6 +290,10 @@ header p {
 .border_2 p {
     margin-top: 10px;
     font-size: 15px;
+    overflow: overlay;
+    display: -webkit-box;
+    -webkit-line-clamp: 13;
+    -webkit-box-orient: vertical;
 }
 
 .photo {
@@ -326,6 +331,7 @@ header p {
     text-align: center;
     padding: 30px 0;
 }
+
 
 .contact .wrap {
     padding-top: 15px;
@@ -397,397 +403,490 @@ header p {
     .box p {
         -webkit-line-clamp: 13;
     }
-}
-
-@media (max-width: 991px) {
-
-    .incognito {
-        top: -59px;
-    }
-
-    /*logo*/
-
-    /*nav*/
-    .navbar a {
-
-        font-size: 35px;
-        padding: 1px 16px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    /*header*/
-    header h1 {
-        font-size: 145px;
-    }
-
-    header p {
-        font-size: 65px;
-    }
-
-    /*ekipa*/
-
-    .column h1 {
-        font-size: 35px;
-    }
-
-    .column h2 {
-        font-size: 27px;
-    }
-
-    /*o nas*/
-    .box p {
-        -webkit-line-clamp: 13;
-    }
-
-    .personality .box {
-        width: 26%;
-    }
-
-    /* portfolio */
-
-    .text h3 {
-        margin-bottom: 10px;
-        font-size: 23px;
-    }
-
-    .border_2 p {
-        font-size: 14px;
-    }
 
     /*kontakt*/
-    .contact h1 {
-        font-size: 36px;
-    }
-
-    .contact input {
-        height: 40px;
-        font-size: 22px;
-    }
-
-    .contact textarea {
-        font-size: 22px;
-    }
-
-    .contact button {
-        font-size: 20px;
-        line-height: 35px;
-    }
-}
-
-@media (max-width: 767px) {
-
-    /*nav i logo*/
-    .logo {
-        width: 20%;
-    }
-
-    .navbar a {
-        font-size: 25px;
-        padding: 1px 16px;
-        margin-top: 8px;
-        margin-bottom: 8px;
-    }
-
-    /*header*/
-    header h1 {
-        font-size: 120px;
-    }
-
-    header p {
-        font-size: 55px;
-    }
-
-    /*ekipa*/
-    .column h1 {
-        font-size: 30px;
-    }
-
-    .column h2 {
-        font-size: 21px;
-
-    }
-
-    /*o nas*/
-    .personality {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .personality .box {
-        width: 70%;
-        height: 28%;
-        display: flex;
-    }
-
-    .margin_personality {
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
-    .box .about {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-bottom: 0px;
-        margin: 8% 8% 8% 8%;
-    }
-
-    .about img {
-        width: 60px;
-        height: 60px;
-    }
-
-    .about .personal_data {
-        margin-left: 0%;
-
-    }
-
-    .personal_data h3 {
-        text-align: center;
-        margin-top: 5px;
-        font-size: 23px;
-    }
-
-    .personal_data h4 {
-        text-align: center;
-        font-size: 13px;
-    }
-
-    .box p {
-        padding-left: 10px;
-        border-left: 2px solid #dfdede;
-        margin: 2% 2% 2% 2%;
-    }
-
-    /* portfolio*/
-    .incognito {
-        top: -45px;
-    }
-
-    .container {
-        width: 90%;
-    }
-
-    .text h3 {
-        margin-bottom: 8px;
-        font-size: 20px;
-    }
-
-    .border_2 p {
-        font-size: 13px;
-    }
-
-    .photo {
-        min-height: 200px;
-    }
-
-    /*kontakt*/
-    .contact h1 {
-        font-size: 32px;
-        padding: 25px 0;
-    }
-
-    .contact input {
-        height: 35px;
-        font-size: 20px;
-    }
-
-    .contact input,
-    .contact button,
-    .contact textarea {
-        margin-bottom: 19px;
-        padding: 6px;
-    }
-
-    .contact textarea {
-        font-size: 20px;
-    }
-
-    .contact button {
-        font-size: 18px;
-        line-height: 30px;
-    }
-}
-
-@media (max-width: 575px) {
-
-    /*nav i logo*/
-
-    .navbar a {
-        font-size: 20px;
-    }
-
-    /*heade*/
-    header h1 {
-        font-size: 90px;
-    }
-
-    header p {
-        font-size: 40px;
-    }
-
-    /*ekipa*/
-    .row {
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .column h1 {
-        font-size: 20px;
-    }
-
-    .column h2 {
-        font-size: 15px;
-        margin-bottom: 6px;
-    }
-
-    /*o nas*/
-    .personality .box {
-
-        width: 90%;
-        border-top: 3px solid rgb(126, 145, 174);
-    }
-
-    /*portfiolio*/
-    .incognito {
-        top: -40px;
-    }
-
-    .container {
-        width: 100%;
-    }
-
-    .text h3 {
-        margin-bottom: 2px;
-        font-size: 18px;
-    }
-
-    .border_2 p {
-        margin-top: 7px;
-        font-size: 11px;
-    }
-
-    /*kontakt*/
-    .contact h1 {
-        font-size: 28px;
-        padding: 18px 0;
-    }
-
-    .contact input {
-        height: 30px;
-        font-size: 18px;
-    }
-
-    .contact textarea {
-        font-size: 18px;
-    }
-
-    .contact input,
-    .contact button,
-    .contact textarea {
-        margin-bottom: 14px;
-        padding: 5px;
-    }
-
-    .contact button {
-        font-size: 17px;
-        line-height: 27px;
-    }
-
     .socials img {
-        width: 13%;
-    }
-}
-
-@media (max-width: 414px) {
-
-    .logo {
-        width: 22%;
+        width: 12%;
     }
 
-    /*header*/
-    header h1 {
-        font-size: 60px;
+
+    @media (max-width: 1024px) {
+        .navbar a {
+
+            font-size: 35px;
+            padding: 1px 16px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+
+        header h1 {
+            font-size: 148px;
+        }
+
+        header p {
+            font-size: 70px;
+        }
     }
 
-    header p {
-        font-size: 30px;
+    @media (max-width: 991px) {
+
+        .incognito {
+            top: -59px;
+        }
+
+
+
+        /*header*/
+        header h1 {
+            font-size: 145px;
+        }
+
+        header p {
+            font-size: 65px;
+        }
+
+        /*ekipa*/
+
+        .column h1 {
+            font-size: 35px;
+        }
+
+        .column h2 {
+            font-size: 27px;
+        }
+
+        /*o nas*/
+        .box p {
+            -webkit-line-clamp: 13;
+        }
+
+        .personality .box {
+            width: 26%;
+        }
+
+        /* portfolio */
+
+        .text h3 {
+            margin-bottom: 10px;
+            font-size: 23px;
+        }
+
+        .border_2 p {
+            font-size: 14px;
+        }
+
+        /*kontakt*/
+        .contact h1 {
+            font-size: 36px;
+        }
+
+        .contact input {
+            height: 40px;
+            font-size: 22px;
+        }
+
+        .contact textarea {
+            font-size: 22px;
+        }
+
+        .contact button {
+            font-size: 20px;
+            line-height: 35px;
+        }
     }
 
-    /*ekipa*/
-    .column h1 {
-        font-size: 18px;
+    @media (max-width: 767px) {
+
+        /*nav i logo*/
+        .logo {
+            width: 20%;
+        }
+
+        .navbar a {
+            font-size: 25px;
+            padding: 1px 16px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+
+        /*header*/
+        header h1 {
+            font-size: 120px;
+        }
+
+        header p {
+            font-size: 55px;
+        }
+
+        /*ekipa*/
+        .column h1 {
+            font-size: 30px;
+        }
+
+        .column h2 {
+            font-size: 21px;
+
+        }
+
+        /*o nas*/
+        .personality {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .personality .box {
+            width: 70%;
+            height: 28%;
+            display: flex;
+        }
+
+        .margin_personality {
+            margin-left: 0%;
+            margin-right: 0%;
+        }
+
+        .box .about {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 0px;
+            margin: 8% 8% 8% 8%;
+        }
+
+        .about img {
+            width: 60px;
+            height: 60px;
+        }
+
+        .about .personal_data {
+            margin-left: 0%;
+
+        }
+
+        .personal_data h3 {
+            text-align: center;
+            margin-top: 5px;
+            font-size: 23px;
+        }
+
+        .personal_data h4 {
+            text-align: center;
+            font-size: 13px;
+        }
+
+        .box p {
+            padding-left: 10px;
+            border-left: 2px solid #dfdede;
+            margin: 2% 2% 2% 2%;
+        }
+
+        /* portfolio*/
+        .incognito {
+            top: -45px;
+        }
+
+        .container {
+            width: 90%;
+        }
+
+        .text h3 {
+            margin-bottom: 8px;
+            font-size: 20px;
+        }
+
+        .border_2 p {
+            font-size: 13px;
+        }
+
+        .photo {
+            min-height: 200px;
+        }
+
+        /*kontakt*/
+        .contact h1 {
+            font-size: 32px;
+            padding: 25px 0;
+        }
+
+        .contact input {
+            height: 35px;
+            font-size: 20px;
+        }
+
+        .contact input,
+        .contact button,
+        .contact textarea {
+            margin-bottom: 19px;
+            padding: 6px;
+        }
+
+        .contact textarea {
+            font-size: 20px;
+        }
+
+        .contact button {
+            font-size: 18px;
+            line-height: 30px;
+        }
     }
 
-    .column h2 {
-        font-size: 11px;
-        margin-bottom: 8px;
+    @media (max-width: 575px) {
+
+        /*nav i logo*/
+
+        .navbar a {
+            font-size: 20px;
+        }
+
+        /*heade*/
+        header h1 {
+            font-size: 90px;
+        }
+
+        header p {
+            font-size: 40px;
+        }
+
+        /*ekipa*/
+        .row {
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .column h1 {
+            font-size: 20px;
+        }
+
+        .column h2 {
+            font-size: 15px;
+            margin-bottom: 6px;
+        }
+
+        /*o nas*/
+        .personality .box {
+
+            width: 90%;
+            border-top: 3px solid rgb(126, 145, 174);
+        }
+
+        /*portfiolio*/
+        .incognito {
+            top: -40px;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        .text h3 {
+            margin-bottom: 2px;
+            font-size: 18px;
+        }
+
+        .border_2 p {
+            margin-top: 7px;
+            font-size: 11px;
+        }
+
+        /*kontakt*/
+        .contact .wrap {
+            width: 49%;
+        }
+
+        .contact h1 {
+            font-size: 28px;
+            padding: 18px 0;
+        }
+
+        .contact input {
+            height: 30px;
+            font-size: 18px;
+        }
+
+        .contact textarea {
+            font-size: 18px;
+        }
+
+        .contact input,
+        .contact button,
+        .contact textarea {
+            margin-bottom: 14px;
+            padding: 5px;
+        }
+
+        .contact button {
+            margin-top: 10px;
+            font-size: 17px;
+            line-height: 27px;
+        }
+
+        .socials {
+            margin-top: 10px;
+        }
+
+        .socials img {
+            width: 13%;
+        }
     }
 
-    /* o nas*/
+    @media (max-width: 414px) {
 
-    .personality .box {
+        .logo {
+            width: 22%;
+        }
 
-        width: 90%;
-        border-top: 3px solid rgb(126, 145, 174);
+        /*header*/
+        header h1 {
+            font-size: 60px;
+        }
+
+        header p {
+            font-size: 30px;
+        }
+
+        /*ekipa*/
+        .column {
+            width: 30%;
+        }
+
+        .column img {
+            margin-bottom: 12px;
+        }
+
+        .column h2 {
+            font-size: 13px;
+            margin-bottom: 17px;
+        }
+
+        /* o nas*/
+
+        .personality .box {
+
+            width: 90%;
+            border-top: 3px solid rgb(126, 145, 174);
+        }
+
+        .box p {
+            font-size: 12px;
+        }
+
+        .personal_data h3 {
+            font-size: 18px;
+        }
+
+        .personal_data h4 {
+            font-size: 10px;
+        }
+
+        /*portfolio*/
+        .incognito {
+            top: -42px;
+        }
+
+        .container {
+            border-top: 3px solid rgb(126, 145, 174);
+        }
+
+        .text h3 {
+            font-size: 16px;
+        }
+
+        .border_2 p {
+            margin-top: 3px;
+            font-size: 10px;
+        }
+
+
+        /*kontakt*/
+        .contact h1 {
+            font-size: 23px;
+            padding: 14px 0;
+        }
+
+        .contact .wrap {
+            width: 60%;
+        }
+
+        .contact textarea {
+            font-size: 16px;
+        }
+
+        .contact button {
+            font-size: 15px;
+            line-height: 24px;
+        }
+
+        .contact input,
+        .contact button,
+        .contact textarea {
+            margin-bottom: 12px;
+        }
+
+        .socials img {
+            width: 17%;
+        }
     }
 
-    .box p {
-        font-size: 12px;
+    @media (max-width: 360px) {
+
+        /*nav*/
+        .navbar a {
+            font-size: 18px;
+        }
+
+        /*header*/
+        header h1 {
+            font-size: 56px;
+        }
+
+        header p {
+            font-size: 26px;
+        }
+
+        /*ekipa*/
+        .column h2 {
+            font-size: 11px;
+        }
+
+        /*kontakt*/
+        .contact .wrap {
+            width: 70%;
+        }
     }
 
-    .personal_data h3 {
-        font-size: 18px;
-    }
+    @media (max-width: 320px) {
+        .navbar a {
+            font-size: 15px;
+        }
 
-    .personal_data h4 {
-        font-size: 10px;
-    }
+        header h1 {
+            font-size: 52px;
+        }
 
-    /*portfolio*/
-    .incognito {
-        top: -42px;
-    }
+        header p {
+            font-size: 23px;
+        }
 
-    .container {
-        border-top: 3px solid rgb(126, 145, 174);
-    }
 
-    .text h3 {
-        font-size: 16px;
-    }
+        .incognito {
+            top: -35px;
+        }
 
-    .border_2 p {
-        margin-top: 3px;
-        font-size: 10px;
-    }
+        /*onas*/
+        .about img {
+            width: 50px;
+            height: 50px;
+        }
 
-    /*kontakt*/
-    .contact h1 {
-        font-size: 25px;
-        padding: 14px 0;
-    }
+        .personal_data h3 {
+            font-size: 16px;
+        }
 
-    .contact textarea {
-        font-size: 16px;
+        .personal_data h4 {
+            font-size: 9px;
+        }
     }
-
-    .contact button {
-        font-size: 15px;
-        line-height: 24px;
-    }
-
-    .contact input,
-    .contact button,
-    .contact textarea {
-        margin-bottom: 12px;
-    }
-
-    .socials img {
-        width: 17%;
-    }
-}
