@@ -634,6 +634,20 @@ header p {
         }
     }
 
+    @media (max-width: 640px) {
+        header h1 {
+            font-size: 93px;
+        }
+
+        header p {
+            font-size: 42px;
+        }
+
+        .column h2 {
+            font-size: 17px;
+        }
+    }
+
     @media (max-width: 575px) {
 
         /*nav i logo*/
@@ -730,6 +744,26 @@ header p {
 
         .socials img {
             width: 13%;
+        }
+    }
+
+    @media (max-width: 420px) {
+        header h1 {
+            font-size: 63px;
+        }
+
+        header p {
+            font-size: 30px;
+        }
+
+        .column {
+
+            width: 31%;
+        }
+
+        .column h2 {
+            font-size: 14px;
+            margin-bottom: 11px;
         }
     }
 
