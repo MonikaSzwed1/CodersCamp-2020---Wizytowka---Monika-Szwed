@@ -583,6 +583,12 @@ header p {
     }
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+    header h1 {
+        font-size: 14.6317vw;
+    }
+}
+
 @media (max-width: 767px) {
 
     /*nav i logo*/
@@ -879,6 +885,12 @@ header p {
     .socials img {
         max-width: 40px;
         max-height: 40px;
+    }
+}
+
+@media (min-width: 421px) and (max-width: 575px) {
+    header h1 {
+        font-size: 15.6522vw;
     }
 }
 
